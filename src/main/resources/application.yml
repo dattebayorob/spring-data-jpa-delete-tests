@@ -1,0 +1,16 @@
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database: postgresql 
+    show-sql: true
+    properties:
+      jdbc.lob.non_contextual_creation: true
+      format_sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: qwe123
+  flyway:
+    validate-on-migrate: false
